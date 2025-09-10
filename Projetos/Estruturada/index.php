@@ -1,9 +1,21 @@
 <?php
 require "funcoes.php";
+session_start();
 
+if (isset($_GET['email'])&& isset($_GET['senha'])) {
+    $email = $_GET['email'];
+    $senha = $_GET['senha'];
 
+    logar($email, $senha);
+}
 
+if (isset($_POST['nome'])&&isset($_POST['email'])&&isset($_POST['senha'])) {
+    $nome = $_GET['nome'];
+    $email = $_GET['email'];
+    $senha = $_GET['senha'];
 
+    cadastrar($nome, $email, $senha);
+}
 
 
 ?>
@@ -16,7 +28,7 @@ require "funcoes.php";
 </head>
 <body>
     
-<form action="cadastrar.php" method="post">
+<form action="" method="post">
 <h2>Cadastro</h2>
 <label for="">Nome</label>
 <input type="text" name="nome" id="">
@@ -32,7 +44,7 @@ require "funcoes.php";
 
 <hr>
 <h2>Login</h2>
-<form action="logar.php" method="get">
+<form action="" method="get">
 <label for="">Email</label>
 <input type="email" name="email" id="">
 <br>
