@@ -3,55 +3,55 @@
 📌 Roadmap de PHP – Do Básico ao Avançado
 1. Fundamentos (Iniciante)
 🔹 Objetivo: aprender a sintaxe básica e lógica de programação em PHP.
-Instalação do PHP e ambiente (XAMPP, Laragon ou Docker).
+Instalação do PHP e ambiente (XAMPP, Laragon ou Docker).✅
 
 
-Estrutura de um arquivo PHP (<?php ... ?>).
+Estrutura de um arquivo PHP (<?php ... ?>).✅
 
 
 Sintaxe básica:
 
 
-Variáveis e tipos de dados.
+Variáveis e tipos de dados.✅
 
 
-Operadores (aritméticos, lógicos, comparação).
+Operadores (aritméticos, lógicos, comparação).✅
 
 
-Estruturas de controle (if, else, switch, loops).
+Estruturas de controle (if, else, switch, loops).✅
 
 
-Funções (criação, parâmetros, retorno).
+Funções (criação, parâmetros, retorno).✅
 
 
-Arrays (indexados, associativos e multidimensionais).
+Arrays (indexados, associativos e multidimensionais).✅
 
 
-Strings (concatenação, funções úteis).
+Strings (concatenação, funções úteis).✅
 
 
-Manipulação de formulários HTML ($_GET, $_POST).
+Manipulação de formulários HTML ($_GET, $_POST).✅
 
 
-Conceito de superglobais ($_SERVER, $_SESSION, $_COOKIE).
+Conceito de superglobais ($_SERVER, $_SESSION, $_COOKIE).✅
 
 
 
 2. Programação Estruturada
 🔹 Objetivo: organizar melhor o código.
-Funções internas importantes (date, explode, implode, array_*).
+Funções internas importantes (date, explode, implode, array_*).✅
 
 
-Inclusão de arquivos (include, require).
+Inclusão de arquivos (include, require).✅
 
 
-Escopo de variáveis (global, static).
+Escopo de variáveis (global, static).✅
 
 
-Manipulação de arquivos (abrir, ler, escrever, excluir).
+Manipulação de arquivos (abrir, ler, escrever, excluir).✅
 
 
-Tratamento de erros e exceções (try, catch).
+Tratamento de erros e exceções (try, catch).✅
 
 
 

@@ -13,7 +13,7 @@ try {
  echo "Erro: " . $e->getMessage() . "<br>"; //Catch exibe o erro detectado acima
  echo "Código: " . $e->getCode() . "<br>"; 
  echo "Arquivo: " . $e->getFile(). "<br>"; 
- echo "Linha: " . $e->getLine(). "<br>"; 
+ echo "Linha: " . $e->getLine(). "<br> <br> "; 
 }
 
 // $e->getMessage() mostra a mensagem do erro
@@ -27,8 +27,18 @@ try {
     throw new InvalidArgumentException("Valor inválido!"); //Foi definido como exceção InvalidArgumentException, ou seja, 
     //se houver algum catch com esta exceção ele será exibido, caso contrário será executada uma exceção genérica
 } catch (InvalidArgumentException $e) {
-    echo "Erro de argumento: " . $e->getMessage();
+    echo "Erro de argumento: " . $e->getMessage(). "<br> <br> ";
 } catch (Exception $e) {
-    echo "Erro genérico: " . $e->getMessage();
+    echo "Erro genérico: " . $e->getMessage(). "<br> <br> ";
+}
+
+
+try {
+    echo "Abrindo arquivo...<br>";
+    throw new Exception("Arquivo corrompido!");
+} catch (Exception $e) {
+    echo "Erro: ". $e->getMessage() . "<br>";
+} finally { // Finally é executado sempre, com ou sem erro
+    echo "Fechando arquivo...";
 }
 

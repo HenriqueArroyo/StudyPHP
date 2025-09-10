@@ -1,0 +1,9 @@
+Roger;a@g.com;1;
+Roger2;a@g.com;1;
+Gustavo Henrique Oliveira Santos;b@g.com;a;
+Gustavo Henrique Oliveira Santos;a@g.com;421;
+asdas;a@g.com;asdas;
+teste;a@g.com;asdsad;
+Roger;bg@g.com;213421;
+teste;a@g.com;asdsad;
+Roger;bfsa@g.com;12321;
