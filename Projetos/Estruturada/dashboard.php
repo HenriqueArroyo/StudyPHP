@@ -1,5 +1,6 @@
 <?php
 
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +11,9 @@
 </head>
 <body>
     <span><?php
-    echo $_COOKIE["usuario"];
+    echo "Bem vindo, " . $_COOKIE["usuario"] . "!<br>";
+    echo date("H:i:s") . "<br>";
+    echo $_SERVER["HTTP_USER_AGENT"] . "<br>" . $_SERVER["SERVER_NAME"];
     ?></span>
 </body>
 </html>

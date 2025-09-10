@@ -1,4 +1,7 @@
 <?php
+
+
+
 session_start();
 
 $email = $_GET['email'];
@@ -44,7 +47,13 @@ if (file_exists("usuarios.txt")) {
 
     if ($existeEmail&&$existeSenha) {
         $_SERVER["logado"] = true;
-        setcookie("usuario", $nomeUsuario. time(), 3600, "/", ".192.168.2.155/PHP"  );
+        setcookie(
+            "usuario", 
+            $nomeUsuario, 
+            time() + 3600,    // expira em 1 hora
+            "/",              // path
+            "192.168.2.155"   // domínio/IP
+        );
         header('Location: dashboard.php');
     }  elseif ($existeEmail==false || $existeSenha==false) {
         throw new Exception("Dados Inválidos!");
