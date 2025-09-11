@@ -6,6 +6,8 @@ function cadastrar($nome, $email, $senha) {
     $senha = $_POST['senha'];
     $disponivel = true;
     
+
+try {
     if (file_exists("usuarios.txt")) {
         $linhas = file("usuarios.txt");
     
@@ -18,10 +20,11 @@ function cadastrar($nome, $email, $senha) {
                 break;
             } 
                
-            
-        
         }
-    } 
+    } else {
+        throw new Exception("Arquivo não localizado!");
+        
+    }
     
     
     if ($disponivel) {
@@ -33,7 +36,15 @@ function cadastrar($nome, $email, $senha) {
         
         
         header('Location: index.php');
+    } else {
+        throw new Exception("Error Processing Request");
+        
     }
+} catch (Exception $e) {
+    echo "Erro: " . $e->getMessage();
+}
+
+   
     
 }
 
