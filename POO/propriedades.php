@@ -2,10 +2,7 @@
 
 //Classe
 class Carro {
-    // Modificadores
-    // Public é acessível de qualquer lugar
-    // Private é apenas dentro da própria classe
-    // Protected é acessível dentro da classe e em classes herdadas
+
     public $marca;
     public $modelo;
     public $ano;
@@ -29,7 +26,7 @@ echo $carro1->exibirInfo();
 class ContaBancaria {
     private $titular, $saldo;
 
-    public function _construct($titular, $saldoInicial = 0) {
+    public function __construct($titular, $saldoInicial = 0) {
         $this->titular = $titular;
         $this->saldo = $saldoInicial;
     }
@@ -41,7 +38,7 @@ class ContaBancaria {
     public function sacar($valor) {
 
         try {
-            if ($valor<$saldo) {
+            if ($valor<$this->saldo) {
                 $this->saldo -= $valor;
                } else {
                 throw new Exception("Saldo Insuficiente");
@@ -67,5 +64,5 @@ $conta1 = new ContaBancaria("Henrique", 100);
 $conta1->depositar(50);
 $conta1->sacar(30);
 
-echo $conta1->getTitular() . " tem saldo de R$" . $conta1->getSaldo;
+echo $conta1->getTitular() . " tem saldo de R$" . $conta1->getSaldo();
 
