@@ -37,7 +37,6 @@ function cadastrar($nome, $email, $senha) {
     
 }
 
-session_start();
 
 function logar($email, $senha){
     $email = $_GET['email'];
