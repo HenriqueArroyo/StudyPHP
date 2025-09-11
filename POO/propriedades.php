@@ -64,5 +64,5 @@ $conta1 = new ContaBancaria("Henrique", 100);
 $conta1->depositar(50);
 $conta1->sacar(30);
 
-echo $conta1->getTitular() . " tem saldo de R$" . $conta1->getSaldo();
+echo "<br>" . $conta1->getTitular() . " tem saldo de R$" . $conta1->getSaldo();
 
