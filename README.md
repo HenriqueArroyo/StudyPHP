@@ -57,19 +57,19 @@ Tratamento de erros e exceções (try, catch).✅
 
 3. Programação Orientada a Objetos (POO)
 🔹 Objetivo: aprender boas práticas de reuso e organização.
-Classes, objetos, propriedades e métodos.
+Classes, objetos, propriedades e métodos. ✅
 
 
-Construtores e destrutores.
+Construtores e destrutores. ✅
 
 
-Encapsulamento (public, private, protected).
+Encapsulamento (public, private, protected). ✅
 
 
-Herança e polimorfismo.
+Herança e polimorfismo. ✅
 
 
-Interfaces e classes abstratas.
+Interfaces e classes abstratas. 
 
 
 Namespaces e autoload (PSR-4).
